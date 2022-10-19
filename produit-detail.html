@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeShop - Design d'un site de ecommerce</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <section class="header-section">
+        <div class="container">
+
+            <header class="navbar">
+
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="logo">
+                    </a>
+                </div>
+        
+                <nav>
+                    <ul id="menuItems">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="produits.html">Produits</a></li>
+                        <li><a href="">A propos</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="authentification.html">Account</a></li>
+                    </ul>
+                    
+                    <a href="panier.html"><img src="images/cart.png" alt="Cart icon" width="25px"></a>
+                    <img src="images/menu.png" alt="Cart icon" width="26px" class="menu-icon" onclick="toggleButton()">
+                </nav>
+        
+            </header>
+
+        </div>
+
+   </section>
+
+
+   <section class="detail-produit">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/gallery-1.jpg" alt="img produit" id="imgProduct" class="produit-img" width="100%">
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                            <img src="images/gallery-1.jpg" alt="gallery 1" class="img-thumbnail">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/gallery-2.jpg" alt="gallery 2" class="img-thumbnail">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/gallery-3.jpg" alt="gallery 3" class="img-thumbnail">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/gallery-4.jpg" alt="gallery 4" class="img-thumbnail">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 produit">
+                    <p>
+                        Home /
+                        <span>details produit</span>
+                    </p>
+
+                    <h1>T-shirt Rouge</h1>
+
+                    <h3>5.000 FCFA</h3>
+
+                    <select>
+                        <option value="">Selectionnez une taille</option>
+                        <option value="">XXL</option>
+                        <option value="">XL</option>
+                        <option value="">Grande</option>
+                        <option value="">Moyenne</option>
+                        <option value="">Petite</option>
+                    </select>
+
+                    <input type="number" id="" name="" value="1">
+
+                    <a href="panier.html">Ajouter au panier</a>
+
+                    <h3>Details Produit</h3>
+                    <p>
+                        Donnez une touche de style à votre garde robe d'été avec le t'shirt actif pour homme HRX. 
+                        Associez-le à un short pour votre séance d'entrainement du matin ou à un jean pour une soirée avec vos gars.
+                    </p>
+                </div>
+            </div>
+        </div>
+   </section>
+
+   <!-- Meilleures produits -->
+   <section class="featured-products">
+
+        <div class="container"> 
+            
+            <div class="row row-2">
+                <h2 class="titre-produits">Tout nos produits</h2>
+                <P>Voir Plus</P>
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/product-1.jpg" alt="produit 1">
+                    
+                    <h3>T-shirt Rouge</h3>
+
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+
+                    <p>5.000 F CFA</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-2.jpg" alt="produit 2">
+
+                    <h3>T-shirt Rouge</h3>
+
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+
+                    <p>7.000 F CFA</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-3.jpg" alt="produit 3">
+
+                    <h3>T-shirt Rouge</h3>
+
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+
+                    <p>6.000 F CFA</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-4.jpg" alt="produit 4">
+
+                    <h3>T-shirt Rouge</h3>
+                    
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+
+                    <p>5.500 F CFA</p>
+                </div>
+                
+            </div>
+        
+   </section>
+
+<!-- Footer -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Téléchargez notre appli</h3>
+                <p>Téléchargez l'application pour téléphone mobile Android et ios</p>
+
+                <div class="app-logo">
+                    <img src="images/play-store.png" alt="android app">
+                    <img src="images/app-store.png" alt="apple app">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <div class="wl">
+                    <img src="images/logo-white.png" alt="white logo">
+                </div>
+                <p>Notre objectif est de rendre durablement le plaaisir et les bienfaits du sport accessible a tous.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Liens utiles</h3>
+                <ul>
+                    <li><a href="">Coupons</a></li>
+                    <li><a href="">Article de blog</a></li>
+                    <li><a href="">Politique de retour</a></li>
+                    <li><a href="">Rejoignez l'affiliation</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Suivez Nous</h3>
+                <ul>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Youtube</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <p class="copyright">&copy; BeShop 2022</p>
+    </div>
+</footer>
+
+<!-- Javascript -->
+<script>
+    var menuItems = document.getElementById('menuItems');
+
+    menuItems.style.maxHeight = '0px';
+    menuItems.style.padding = '0px';
+
+    function toggleButton(){
+        
+        if(menuItems.style.maxHeight == '0px'){
+            menuItems.style.maxHeight = '200px';
+            menuItems.style.padding = '15px';
+        }else{
+            menuItems.style.maxHeight = '0px';
+            menuItems.style.padding = '0px';
+        }
+    }
+
+</script>
+
+<!-- Javascript - Page de Detail Produit - Autres images -->
+<script>
+    var imgProduct = document.getElementById('imgProduct');
+    var imgThumbnails = document.getElementsByClassName('img-thumbnail')
+
+    imgThumbnails[0].onclick = function(){
+        imgProduct.src = imgThumbnails[0].src
+    }
+
+    imgThumbnails[1].onclick = function(){
+        imgProduct.src = imgThumbnails[1].src
+    }
+
+    imgThumbnails[2].onclick = function(){
+        imgProduct.src = imgThumbnails[2].src
+    }
+
+    imgThumbnails[3].onclick = function(){
+        imgProduct.src = imgThumbnails[3].src
+    }
+
+</script>
+
+</body>
+</html>

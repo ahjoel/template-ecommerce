@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeShop - Design d'un site de ecommerce</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <section class="header-section">
+        <div class="container">
+
+            <header class="navbar">
+
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="logo">
+                    </a>
+                </div>
+        
+                <nav>
+                    <ul id="menuItems">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="produits.html">Produits</a></li>
+                        <li><a href="">A propos</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="authentification.html">Account</a></li>
+                    </ul>
+                    
+                    <a href="panier.html"><img src="images/cart.png" alt="Cart icon" width="25px"></a>
+                    <img src="images/menu.png" alt="Cart icon" width="26px" class="menu-icon" onclick="toggleButton()">
+                </nav>
+        
+            </header>
+
+        </div>
+
+   </section>
+
+
+<section class="panier">
+
+    <div class="container">
+
+        <div class="row">
+            <table>
+                <tr>
+                    <th>Produit</th>
+                    <th>Quantite</th>
+                    <th>Sous Total</th>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="info-produit">
+                            <img src="images/buy-1.jpg" alt="">
+                            <div class="text-produit">
+                                <h3>T-Shirt Rouge XHR</h3>
+                                <p>6.000 FCFA</p>
+                                
+                                <a href="">Supprimer</a>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>
+                        <input type="number" name="" id="">
+                    </td>
+                    <td>
+                        6.000 FCFA
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>
+                        <div class="info-produit">
+                            <img src="images/buy-2.jpg" alt="">
+                            <div class="text-produit">
+                                <h3>T-Shirt Rouge XKR</h3>
+                                <p>5.000 FCFA</p>
+                                
+                                <a href="">Supprimer</a>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>
+                        <input type="number" name="" id="">
+                    </td>
+                    <td>
+                        5.000 FCFA
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <div class="info-produit">
+                            <img src="images/buy-3.jpg" alt="">
+                            <div class="text-produit">
+                                <h3>T-Shirt Rouge XLR</h3>
+                                <p>7.000 FCFA</p>
+                                
+                                <a href="">Supprimer</a>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>
+                        <input type="number" name="" id="">
+                    </td>
+                    <td>
+                        7.000 FCFA
+                    </td>
+
+                </tr>
+            </table>
+        </div>
+
+        <div class="row totaux">
+            <table>
+                <tr>
+                    <td>Sous Total</td>
+                    <td>25.000 FCFA</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>2.000 FCFA</td>
+                </tr>
+                <tr>
+                    <td>Grand Total</td>
+                    <td>27.000 FCFA</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Téléchargez notre appli</h3>
+                <p>Téléchargez l'application pour téléphone mobile Android et ios</p>
+
+                <div class="app-logo">
+                    <img src="images/play-store.png" alt="android app">
+                    <img src="images/app-store.png" alt="apple app">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <div class="wl">
+                    <img src="images/logo-white.png" alt="white logo">
+                </div>
+                <p>Notre objectif est de rendre durablement le plaaisir et les bienfaits du sport accessible a tous.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Liens utiles</h3>
+                <ul>
+                    <li><a href="">Coupons</a></li>
+                    <li><a href="">Article de blog</a></li>
+                    <li><a href="">Politique de retour</a></li>
+                    <li><a href="">Rejoignez l'affiliation</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Suivez Nous</h3>
+                <ul>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Youtube</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <p class="copyright">&copy; BeShop 2022</p>
+    </div>
+</footer>
+
+<!-- Javascript -->
+<script>
+    var menuItems = document.getElementById('menuItems');
+
+    menuItems.style.maxHeight = '0px';
+    menuItems.style.padding = '0px';
+
+    function toggleButton(){
+        
+        if(menuItems.style.maxHeight == '0px'){
+            menuItems.style.maxHeight = '200px';
+            menuItems.style.padding = '15px';
+        }else{
+            menuItems.style.maxHeight = '0px';
+            menuItems.style.padding = '0px';
+        }
+    }
+
+</script>
+
+</body>
+</html>
